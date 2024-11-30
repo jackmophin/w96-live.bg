@@ -170,6 +170,7 @@ function onResize () {
   // Store a new timeout to avoid calling afterResize for every resize event
   resizeTimeout = window.setTimeout(afterResize, 500);
 }
+onResize();
 window.addEventListener('resize', onResize);
 
 // Populate the dots array with random dots
